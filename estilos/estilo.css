@@ -1,0 +1,134 @@
+body {
+  background-color: #000;
+  color: #fff;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.contenedor {
+  /* width: 1000px; */
+  /* height: 1000px; */
+  background-color: #000;
+  margin: 1 auto;
+  border: 1px solid rgba(156, 1, 213, 0.8);
+  padding: 10px;
+  font-family: 'Courier New', Courier, monospace;
+  color: #000;
+  border-radius: 5px;
+  
+}
+
+.Titulo {
+  height: 50px;
+  background-color: rgba(0, 255, 255, .8);
+  display: flex;
+  font-size: 24px;
+  border: 1px solid #000;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+.fila {
+  background-color: rgba(0, 255, 255, .8);
+  /* border: 1px solid #000; */
+  display: flex;
+  flex-direction: row;
+  justify-content:space-around;
+  align-items: center;
+}
+
+
+
+.columna {
+  background-color: rgba(0, 255, 255, .8);
+  /* position: relative; */
+  border: 1px solid #000;
+  
+  
+  justify-content: center;
+  align-items: center;
+ 
+  border-radius: 5px;
+  /* hacemos que deje un espacio entre las celdas */
+  margin: 5px;
+  padding: 5px;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 15.5%;
+}
+.columnaID {
+  background-color: rgba(0, 255, 255, .8);
+  /* position: relative; */
+  border: 1px solid #000;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 7%;
+  border-radius: 5px;
+  /* hacemos que deje un espacio entre las celdas */
+  margin: 5px;
+  padding: 5px;
+}
+.columna:hover {
+  background-color: #00f;
+}
+
+.celdaS {
+  padding: 0px;
+  text-align: left;
+  justify-content: center;
+  font-size: 18px;
+}
+
+.celda {
+  padding: 0px;
+  text-align:left;
+  justify-content: center;
+  font-size: 18px;
+  width: 100%;
+  height: 100%;
+}
+
+.boton {
+  width: 100px;
+  height: 50px;
+  background-color: rgba(156, 1, 213, 0.8);
+  border: 1px solid #000;
+  border-radius: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: large;
+}
+.boton:hover {
+  background-color: #00f;
+  color: #fff;
+}
+/* bot-on como boton pero su tamaño se ajusta al maximo de su contenedor */
+.botoon {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 255, 255, .8);
+  border: 1px solid #000;
+  border-radius: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: large;
+}
+.botoon:hover {
+  background-color: #00f;
+  color: #fff;
+}
+
+/* Estilo para los links */
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+a:hover {
+  color: rgb(255, 0, 0);
+}

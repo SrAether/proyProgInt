@@ -1,0 +1,102 @@
+body {
+    background-color: #000;
+    color: #fff;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+
+/* Estilo para el formulario */
+#formulario {
+    background-color: rgba(0, 0, 0, 0);
+    
+    color: #ff0000;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.5);
+    /* aumentamos el tamaño del texto */
+    font-size: 20px;
+    
+    
+}
+
+/* Estilo para los campos de texto y select */
+input[type="text"],
+input[type="password"]
+{
+    /* background-color: rgba(0, 255, 255, 0.8); */
+    color: #000000;
+    border: 1px solid #0ff;
+    padding: 30px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    width: 95%;
+    font-size: 16px;
+    outline: none;
+     
+}
+select {
+    /* background-color: rgba(0, 255, 255, 0.8); */
+    color: #000000;
+    border: 1px solid #0ff;
+    padding: 30px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    width: 100%;
+    font-size: 16px;
+    outline: none;
+}
+
+
+
+
+/* Estilo para el botón */
+button {
+    background-color: #0ff;
+    color: #000;
+    border: none;
+    padding: 15px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #00f;
+}
+
+/* Estilos para las etiquetas */
+label {
+    display: flex;
+    margin-bottom: 5px;
+    color: rgba(0, 255, 255, 0.8);
+    font-size: 18px;
+    margin: 20px 20px 10px 20px;
+}
+
+.navegacion {
+    background-color: #000;
+    color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.5);
+    margin-top: 20px;
+    display: flex;
+}
+
+.contCorreo {
+    display: flex;
+}
+
+#mensajeCorreo {
+    background-color: #000;
+    color:#ff0000;
+    display: none;
+    display: flex;
+}
+#mensajeFaltanDatos {
+    background-color: #000;
+    color:#ff0000;
+    display: none;
+    display: flex;
+}

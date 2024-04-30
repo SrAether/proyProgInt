@@ -1,0 +1,1 @@
+los roles son gerente 1 y ejecutivo 2

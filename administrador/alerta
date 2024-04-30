@@ -1,0 +1,17 @@
+SELinux está negando a php-fpm de write el acceso a carpeta /var/www/html/proyecto/administrador/archivos.
+
+Complemento: httpd_write_content
+ SELinux evitó acceso httpd write a
+/var/www/html/proyecto/administrador/archivos.  Los scripts de httpd no tienen
+permitido modificar contenidos sin etiquetado específico de todos los archivos.
+Si /var/www/html/proyecto/administrador/archivos es contenido modificable
+necesita ser etiquetado como httpd_sys_rw_content_t, o , si todo lo que necesita
+es agregar, se lo puede etiquetar conmo httpd_sys_ra_content_t.   Por favor, lea
+'man httpd_selinux' para más información sobre la configuración de httpd y
+selinux.
+
+Si desea permitir que php-fpm tenga write acceso al archivos directory
+Necesita modificar la etiqueta a '/var/www/html/proyecto/administrador/archivos'
+# semanage fcontext -a -t httpd_sys_rw_content_t '/var/www/html/proyecto/administrador/archivos'
+# restorecon -v '/var/www/html/proyecto/administrador/archivos'
+
